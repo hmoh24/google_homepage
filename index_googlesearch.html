@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<style>
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+    display:grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 4fr 5fr;
+    max-width: 100vw;
+}
+
+a{
+    color: rgb(92, 90, 90);
+    text-decoration-line: none;
+    margin: 5px;
+
+}
+
+#imgbox {
+    height: 92px;
+    width: 100px;
+    background-image: url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+input{
+    width: 600px;
+    height: 2.75rem;
+    border: 1px solid rgb(220, 223, 223);
+    padding: 15px 30px;
+    border-radius: 20px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+ input:hover {
+     box-shadow:0 0 7px rgb(220, 223, 223)
+}
+
+#signinbutton{
+    background-color: rgb(47, 125, 241);
+    color: white;
+    font-weight: bold;
+    padding: 4px 19px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+}
+
+#signin{
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.signin button:active{
+    background-color: rgb(9, 40, 87);
+}
+
+#linkstop {
+    grid-area: 2 / 2 / 3 / 3;
+    display:flex;
+    
+}
+
+#rightnav {
+    width: 250px;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#mainlinks {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+/* set top of columns to make line*/
+
+</style>
+
+<head><meta charset="UTF-8"></head>
+
+<body>
+    <div id="imgbox"> </div>
+    <div id="searchinput">
+        <form>
+            <input id="search" type="search"><br>
+        </form>
+    </div>
+    <div id="signin">
+        <button id="signinbutton">Sign in</button>
+    </div>
+    <div id="linkstop">
+        <div id="all" class="toplinks"><a href="">All</a></div>
+        <div id="news" class="toplinks"><a href="">News</a></div>
+        <div id="images" class="toplinks"><a href="">Images</a></div>
+        <div id="videos" class="toplinks"><a href="">Videos</a></div>
+        <div id="books" class="toplinks"><a href="">Books</a></div>
+        <div id="more" class="toplinks"><a href="">More</a></div>
+        <div id ="rightnav">
+            <div id="settings" class="toplinks"><a href="">Settings</a></div>
+            <div id="tools" class="toplinks"><a href="">Tools</a></div>
+        </div>
+    </div>
+    <div class="empty"></div>
+    <div id="mainlinks">
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+        <div class="content" id="box1">
+            <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
+            <a href="" class="bluelinks">Lorem Ipsum</a>
+            <p class="linktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio, numquam cum vel fugiat aliquid itaque adipisci cumque animi, esse voluptate iste delectus incidunt? Cupiditate repellendus error veniam optio. Corporis!</p>
+        </div>
+    </div>
+    <div class="empty"></div>
+
+</body>
