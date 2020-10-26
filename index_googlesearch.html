@@ -35,15 +35,16 @@ footer, header, hgroup, menu, nav, section {
 
 body{
     display:grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 4fr 5fr;
+    grid-template-rows: 80px auto auto auto;
+    grid-template-columns: 130px 650px 5fr;
     max-width: 100vw;
+    font-family: arial;
 }
 
 a{
     color: rgb(92, 90, 90);
     text-decoration-line: none;
-    margin: 5px;
+    margin-right: 10px;
 
 }
 
@@ -54,6 +55,8 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
     grid-area: 1 / 1 / 2 / 2;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 input{
@@ -63,6 +66,7 @@ input{
     padding: 15px 30px;
     border-radius: 20px;
     grid-area: 1 / 2 / 2 / 3;
+    margin: 19px;
 }
  input:hover {
      box-shadow:0 0 7px rgb(220, 223, 223)
@@ -85,6 +89,8 @@ input{
     display: flex;
     justify-content: end;
     align-items: flex-start;
+    margin-top: 25px;
+    margin-right: 15px;
 }
 
 .signin button:active{
@@ -94,11 +100,12 @@ input{
 #linkstop {
     grid-area: 2 / 2 / 3 / 3;
     display:flex;
-    
+    padding-left: 30px;
+    font-size: 15px;
 }
 
 #rightnav {
-    width: 250px;
+    width: 290px;
     display:flex;
     flex-direction: row;
     justify-content: end;
@@ -106,6 +113,46 @@ input{
 
 #mainlinks {
     grid-area: 3 / 2 / 4 / 3;
+    margin-left: 25px;
+}
+
+#resultstext {
+    font-size: 14px;
+    color: rgb(131, 129, 129);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+    margin-top: 30px;
+}
+
+.sitelinks{
+    font-size: 14px;
+    color: black;
+}
+
+.bluelinks {
+    color: rgb(25, 0, 255);
+    font-size: 18px;
+}
+
+a.bluelinks:hover{
+    text-decoration-line: underline;
+}
+
+a.bluelinks:link{
+    color: rgb(25, 0, 255);
+}
+
+.linktext{
+   color:rgb(92, 89, 89);
+   font-size: 14px;
+   
 }
 
 /* set top of columns to make line*/
@@ -138,6 +185,7 @@ input{
     </div>
     <div class="empty"></div>
     <div id="mainlinks">
+        <div id="resultstextbox"><p id="resultstext">About 2,180,000,000 (0.57 seconds)</p></div>
         <div class="content" id="box1">
             <a href="" class="sitelinks">lorem.co.uk/ipsum</a><br>
             <a href="" class="bluelinks">Lorem Ipsum</a>
